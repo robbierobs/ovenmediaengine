@@ -14,6 +14,8 @@ services:
             - ./ome-origin-conf:/opt/ovenmediaengine/bin/origin_conf
             - ./ome-edge-conf:/opt/ovenmediaengine/bin/edge_conf
         ports:
+            - 80:80
+            - 443:443
             - 1935:1935
             - 3333:3333
             - 3334:3334
@@ -23,7 +25,6 @@ services:
             - 4000:4000/udp
         networks:
             - backend
-        # environment:
 
 networks:
     backend:
