@@ -1,0 +1,6 @@
+#+title: README
+
+* ovenmediaengine docker samples and docker-compose
+** Steps:
+1. Modify Server.xml to needs
+2. Place the Server.xml into the 2 volume directories (ome-edge-conf, ome-origin-conf)
