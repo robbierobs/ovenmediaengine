@@ -13,6 +13,7 @@ services:
         volumes:
             - ./ome-origin-conf:/opt/ovenmediaengine/bin/origin_conf
             - ./ome-edge-conf:/opt/ovenmediaengine/bin/edge_conf
+            -  /etc/letsencrypt/live/<domain>:/opt/certs/
         ports:
             - 80:80
             - 443:443
